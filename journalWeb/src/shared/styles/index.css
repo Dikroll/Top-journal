@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+@import './theme.css';
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.animate-spin {
+	animation: spin 1s linear infinite;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+html,
+body {
+	scrollbar-width: none;
+	overflow-x: hidden;
+	overscroll-behavior-x: none;
+}
+
+body {
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		sans-serif;
+}
+
+* {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+}
+
+button {
+	touch-action: manipulation;
+}
+
+button,
+input,
+textarea,
+[contenteditable],
+.selectable {
+	user-select: text;
+	-webkit-user-select: text;
+}
+
+*:focus,
+*:focus-visible {
+	outline: none !important;
+}
+
+svg:focus,
+svg:focus-visible,
+.recharts-wrapper:focus,
+.recharts-wrapper:focus-visible,
+.recharts-wrapper *:focus,
+.recharts-wrapper *:focus-visible {
+	outline: none !important;
+}
+
+/* ── Light theme dot pattern ── */
+.light .light-dot-pattern,
+[data-theme='light'] .light-dot-pattern {
+	display: block !important;
+}
+
+/* ── Grade utility classes ── */
+
+.grade-bg-5 {
+	background: var(--color-grade-5-bg);
+}
+.grade-bg-4 {
+	background: var(--color-grade-4-bg);
+}
+.grade-bg-3 {
+	background: var(--color-grade-3-bg);
+}
+.grade-bg-2 {
+	background: var(--color-grade-2-bg);
+}
+
+.grade-badge-5 {
+	background: var(--color-grade-5-bg);
+	color: var(--color-grade-5-badge);
+	border-color: var(--color-grade-5-border);
+}
+.grade-badge-4 {
+	background: var(--color-grade-4-bg);
+	color: var(--color-grade-4-badge);
+	border-color: var(--color-grade-4-border);
+}
+.grade-badge-3 {
+	background: var(--color-grade-3-bg);
+	color: var(--color-grade-3-badge);
+	border-color: var(--color-grade-3-border);
+}
+.grade-badge-2 {
+	background: var(--color-grade-2-bg);
+	color: var(--color-grade-2-badge);
+	border-color: var(--color-grade-2-border);
+}
