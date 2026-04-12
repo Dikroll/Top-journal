@@ -49,7 +49,7 @@ Top Academy Journal — это клиентское приложение, соз
 1. Клонировать репозиторий:
 
 ```bash
-git clone https://github.com/
+git clone https://github.com/Dikroll/Top-journal
 ```
 
 2. Перейти в папку проекта:
